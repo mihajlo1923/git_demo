@@ -19,6 +19,9 @@
         color: black;
 
       }
+      .prelaz{
+        height: 56px;
+      }
       .custom-container {
       background-color: #504a4ace;
       padding: 20px;
@@ -28,10 +31,15 @@
     .custom-container img {
       max-width: 100%;
       height: auto;
-      border-radius: 50%;
+      border-radius: 10px;
     }
     .custom-container:hover{
       box-shadow:10px 5px 5px green;
+    }
+    .isteslike {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
     }
     </style>
   </head>
@@ -39,16 +47,16 @@
     
     <body class="bg-secondary">
 
-      <nav class="navbar navbar-expand-lg navbar-light">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Tvoj Projekat</a>
+          <a class="navbar-brand" href="#">Projekat portfolio</a>
           <div class="" >
             <ul class="navbar-nav ms-auto"> 
               <li class="nav-item">
-                <a  class="nav-link" href="">OVO SAM JA</a>
+                <a  class="nav-link" href="#ovo_sam_ja">About me</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#about">Moj rad</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#contact">Contact</a>
@@ -57,11 +65,15 @@
           </div>
         </div>
       </nav>
+
+      <div class="prelaz"></div>
+
+
       <div class="container-fluid">
         <div class="row">
           <div class="col-md-6">
             <div class="custom-container">
-              <img src="mojaslika.jpg" alt="Vaša slika">
+              <img id="ovo_sam_ja"src="mojaslika.jpg" alt="Vaša slika">
               <p>
                Pozdrav ovo je moj portfolio sajt Moje ime je Mihajlo Pusonja i ovaj sajt je deo mog projekta iz web programiranja.
               Imam 18 godina i cilj mi je da postanem softverski inzenjer. Idem trenutno u cetvrti razred Prve kragujevacke gimnazije              </p>
@@ -69,15 +81,35 @@
           </div>
           <div class="col-md-6">
             <div class="custom-container">
-              <p>Drugi kontejner</p>
+              <img src="New_york_times_square-terabass.jpg" alt="Vaša druga slika" class="img-fluid">
+              
+              <p>Aspiraciju za mene predstavlja zavrsetak studija i pronalazenje posla u New Yorku</p>
             </div>
           </div>
         </div>
       </div>
-      <div id="about" class="container-fluid custom-container">
-        <p>Ova sekciju jos nisam smislio.</p>
+
+      <div id="about" class="container-fluid custom-container" style="padding: 1rem; margin: 1rem;">
+        <div class="row">
+          <div class="col-md-4 col-12">
+            <img src="https://imgs.search.brave.com/GOCHUVQwtY4OTNOSFTDZneXsfKUDXnadzfDHyuHT6Is/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9penBy/b2dyYW1pcmFuamEu/d2VlYmx5LmNvbS9m/aWxlcy90aGVtZS9p/bWFnZXMvZ3JhbmFu/amVfdV9wcm9ncmFt/dV9saW5rLmpwZw" alt="Slika 1" class="isteslike">
+            <p>Tekst </p>
+          </div>
+
+          <div class="col-md-4 col-12">
+            <img src="sql.webp" alt="Slika 2" class="isteslike">
+            <p>Tekst </p>
+          </div>
+          <div class="col-md-4 col-12">
+            <img src="jezici.png" alt="Slika 3" class="isteslike">
+            <p>Tekst </p>
+          </div>
+        </div>
       </div>
       
+      <div id="contact" class="container-fluid custom-container">
+        <p>Ova sekcija ce  sadržati kontakt informacije.</p>
+      </div>
       <div id="contact" class="container-fluid custom-container">
         <p>Ova sekcija ce  sadržati kontakt informacije.</p>
       </div>
