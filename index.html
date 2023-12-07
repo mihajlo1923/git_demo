@@ -42,6 +42,18 @@
       height: 200px;
       object-fit: cover;
     }
+    .reviews-container {
+      margin-top: 20px;
+    }
+    .review-card {
+      border: 1px solid #ddd;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    .stars {
+      color: #f8d400;
+    }
+   
     </style>
   </head>
   <body>
@@ -132,7 +144,45 @@
           </div>
         </div>
       </div>
-      
+  <div id="reviews" class="container-fluid custom-container reviews-container">
+  <h2>Recenzije</h2>
+  <div id="reviews-list"></div>
+  <hr>
+  <h3>Dodaj recenziju</h3>
+  <form id="review-form">
+    <div class="mb-3">
+      <label for="review-text" class="form-label">Tekst recenzije</label>
+      <textarea class="form-control" id="review-text" rows="3" required></textarea>
+    </div>
+    <div class="mb-3">
+      <label for="review-rating" class="form-label">Ocena</label>
+      <select class="form-select" id="review-rating" required>
+        <option value="1">1 zvezdica</option>
+        <option value="2">2 zvezdice</option>
+        <option value="3">3 zvezdice</option>
+        <option value="4">4 zvezdice</option>
+        <option value="5">5 zvezdica</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="review-user" class="form-label">Korisnik</label>
+      <input type="text" class="form-control" id="review-user" required>
+    </div>
+    <button type="button" class="btn btn-primary" onclick="addReview()">Dodaj recenziju</button>
+  </form>
+  <hr>
+  <div>
+    <label for="sort-reviews">Sortiraj recenzije po ocenama: </label>
+    <select id="sort-reviews" onchange="sortReviews()">
+      <option value="asc">Rastuće</option>
+      <option value="desc">Opadajuće</option>
+    </select>
+  </div>
+</div>
+<script src="recenzije.js">
+
+</script>
+ 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
