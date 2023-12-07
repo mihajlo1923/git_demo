@@ -1,7 +1,7 @@
 let reviews = [
-    { text: "Odličan proizvod!", rating: 5, user: "Korisnik1" },
-    { text: "Proizvod je u redu.", rating: 3, user: "Korisnik2" },
-    { text: "Loš proizvod.", rating: 1, user: "Korisnik3" }
+    { text: "Odličan proizvod!", rating: 5, user: "Mihajlo" },
+    { text: "Proizvod je u redu.", rating: 3, user: "Luka" },
+    { text: "Loš proizvod.", rating: 1, user: "Jovan" }
   ];
 
 
